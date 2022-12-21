@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #124;
+  /*color: #fff;*/
+  font-family: 'Roboto', sans-serif;
+  
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color:#f3ac40;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FF9800;
+}
+.add {
+  max-width: 800px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3ac40;
+  padding: 40px 10px;
+  border-radius: 5px;
+  
+}
+input[type="text"] {
+  outline: none;
+  border: none;
+  width: 70%;
+  margin-right: 10%;
+  color: #333;
+  border: 2px solid #ccc;
+}
+
+input {
+  padding: 10px;
+  font-weight: bold;
+}
+input.addTask {
+  background-color: #ddd;
+  color: #30043f;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+input[type="button"]:hover {
+  background-color: #30043f;
+  color: #fff;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 5px;
+  width: 90%;
+  padding: 0 10px 0 5px;
+  border-radius: 0 5px 5px 0;
+  border-left: 8px solid #ddd;
+  position: relative;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+.task.done{
+  border-left: 8px solid #30043f;
+}
+.task:hover {
+  border-left: 8px solid #30043f;
+}
+.tasks {
+  flex-direction: column;
+  cursor: pointer;
+}
+p {
+  width: fit-content;
+  color: #333;
+  padding: 5px;
+  word-break: break-all;
+  margin-right: 5px;
+}
+
+.settings #delete {
+  background-color: #fff;
+  color: rgb(234, 12, 12);
+  font-size: 1.2rem;
+  padding: 6px 8px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: 2px solid rgb(234, 12, 12);
+  
+}
+.settings #delete:hover {
+  color: #fff;
+  background-color: rgb(234, 12, 12);
+}
+.settings .menuIcon {
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings:hover .menu {
+  transform: scale(1);
+}
+.settings .menuIcon span {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+}
+
+.popup-box{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.popup{
+  transition: all 0.3s ease;
+}
+.content{
+  background-color: #f1f5f9;
+  padding: 20px 30px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: #333;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+.content h3{
+  margin-bottom: 50px;
+  cursor: default;
+  line-height: 30px;
+}
+.content .options{
+  margin-bottom: 20px;
+}
+.content .options span{
+  font-size: 1.2rem;
+  padding: 7px 15px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.content .options span:nth-child(2){
+  margin-left: 10px;
+}
+.content .options span:hover{
+  background-color: #aaa;
+  color: #fff;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tasks to do</title>
+  </head>
+  <body>
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <h3>Are you sure you want to delete this task ?</h3>
+          <div class="options">
+            <span id="accept">Yes</span>
+            <span id="reject">No</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="add">
+        <input type="text" name="text" id="text" placeholder="Add a task" />
+        <input type="button" value="Add task" class="addTask" />
+      </div>
+      <div class="add tasks"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
